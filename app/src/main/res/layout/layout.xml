@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+        <TextView
+            android:id="@+id/tv_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名："
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/edit_name2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+        <TextView
+            android:id="@+id/tv_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电话："
+            android:textSize="25sp"
+            />
+
+        <EditText
+            android:id="@+id/edit_tel"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+        <TextView
+            android:id="@+id/tv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="住址："
+            android:textSize="25sp"
+            />
+
+        <EditText
+            android:id="@+id/edit_home"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+        <RadioGroup
+            android:id="@+id/radioGroup11"
+            android:layout_width="223dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/radio_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:text="男"
+                android:textSize="25sp" />
+
+            <RadioButton
+                android:id="@+id/radio_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:textSize="25sp" />
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_add"
+            android:layout_width="81dp"
+            android:layout_height="51dp"
+            android:onClick="click_add"
+            android:text="增加"
+            android:layout_marginLeft="50dp"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_del"
+            android:layout_width="81dp"
+            android:layout_height="52dp"
+            android:onClick="click_del"
+            android:text="删除"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_modify"
+            android:layout_width="81dp"
+            android:layout_height="51dp"
+            android:onClick="click_modify"
+            android:text="修改"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_check"
+            android:layout_width="81dp"
+            android:layout_height="51dp"
+            android:onClick="click_check"
+            android:text="查找"
+            android:textSize="20sp"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="click_exit"
+        android:text="退出"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+         />
+
+    <ListView
+        android:id="@+id/lv1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        />
+
+
+</LinearLayout>
